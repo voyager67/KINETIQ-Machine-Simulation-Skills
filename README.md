@@ -239,7 +239,7 @@ These visual previews show the layout and content of the static project page—n
   <img src="assets/kinetiq-static-pages-tour.gif" alt="Animated static-site walkthrough: overview, skill catalogue and workflow" width="100%">
 </p>
 
-[Open the MP4 static-site walkthrough](assets/kinetiq-static-pages-tour.mp4). To add a separate recorded machine demo later, upload the MP4 through GitHub's README editor and put the actual GitHub-generated attachment URL on its own line; do not use a made-up attachment URL.
+[Open the MP4 static-site walkthrough](assets/kinetiq-static-pages-tour.mp4).
 
 
 ## 🧾 Inspiration and attribution
