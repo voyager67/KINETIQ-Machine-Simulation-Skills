@@ -148,6 +148,10 @@ def validate(root: Path = ROOT, minimum_words: int = 300) -> list[str]:
         if not path.is_file():
             continue
         rel = path.relative_to(root)
+        # Exclude only Git's root control directory during a normal checkout.
+        # Nested .git directories remain forbidden by FORBIDDEN_PATH_PARTS.
+        if rel.parts and rel.parts[0] == ".git":
+            continue
         if any(part in FORBIDDEN_PATH_PARTS for part in rel.parts):
             errors.append(f"forbidden build/cache path included: {rel.as_posix()}")
         if path.name in SENSITIVE_FILENAMES or path.suffix.lower() in SENSITIVE_SUFFIXES:
