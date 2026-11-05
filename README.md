@@ -66,7 +66,7 @@ Requirements: Python 3.10 or newer. No third-party Python dependencies.
 
 ```bash
 python scripts/validate.py
-python -m unittest discover -s tests -v
+python -B -m unittest discover -s tests -v
 ```
 
 ### 3. Install selected skills
@@ -207,7 +207,7 @@ See [Offline and safety guide](docs/OFFLINE-AND-SAFETY.md) and [Security policy]
 
 ```bash
 python scripts/validate.py
-python -m unittest discover -s tests -v
+python -B -m unittest discover -s tests -v
 python -m http.server 8765 --directory site
 ```
 
