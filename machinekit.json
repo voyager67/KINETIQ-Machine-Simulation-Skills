@@ -1,0 +1,19 @@
+{
+  "name": "KINETIQ-Machine-Simulation-Skills",
+  "display_name": "KINETIQ Machine Simulation Skills",
+  "owner": "Harsh Singh",
+  "github": "voyager67",
+  "edition": "complete",
+  "version": "1.2.1",
+  "skill_count": 17,
+  "categories": 13,
+  "format": "Agent Skills (SKILL.md)",
+  "python_requirement": "3.10+ for optional installer and validator",
+  "license": "CC BY-NC-ND 4.0",
+  "release_required": false,
+  "runtime_api_required": false,
+  "static_site": "site/index.html",
+  "github_repository_name": "KINETIQ-Machine-Simulation-Skills",
+  "github_repository_url": "https://github.com/voyager67/KINETIQ-Machine-Simulation-Skills",
+  "package_name": "kinetiq-machine-simulation-skills"
+}

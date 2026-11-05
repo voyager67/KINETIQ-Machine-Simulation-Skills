@@ -1,0 +1,47 @@
+{
+  "title": "Example simulator tour",
+  "fps": 30,
+  "duration_seconds": 20,
+  "beats": [
+    {
+      "start": 0,
+      "end": 3,
+      "camera": "overall",
+      "state": "running",
+      "selection": null,
+      "caption": "See the complete machine"
+    },
+    {
+      "start": 3,
+      "end": 7,
+      "camera": "input-side",
+      "state": "input-highlight",
+      "selection": "input-shaft",
+      "caption": "Follow the input"
+    },
+    {
+      "start": 7,
+      "end": 12,
+      "camera": "internal",
+      "state": "cutaway",
+      "selection": "drive-train",
+      "caption": "Inspect the mechanism"
+    },
+    {
+      "start": 12,
+      "end": 16,
+      "camera": "output-side",
+      "state": "output-highlight",
+      "selection": "output-shaft",
+      "caption": "Observe the output"
+    },
+    {
+      "start": 16,
+      "end": 20,
+      "camera": "overall",
+      "state": "running",
+      "selection": null,
+      "caption": "Return to the whole system"
+    }
+  ]
+}

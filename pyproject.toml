@@ -1,0 +1,11 @@
+[project]
+name = "kinetiq-machine-simulation-skills"
+version = "1.2.1"
+description = "Portable AI-agent skills for interactive 3D machine explainers and engineering simulation workflows."
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Harsh Singh" }]
+dependencies = []
+
+[tool.unittest]
+start-directory = "tests"

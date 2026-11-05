@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="440" viewBox="0 0 1440 440" role="img" aria-labelledby="title desc">
+<title id="title">KINETIQ Machine Simulation Skills</title><desc id="desc">An original engineering-inspired banner with an isometric mechanism drawing and the KINETIQ name.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b151b"/><stop offset=".6" stop-color="#102d30"/><stop offset="1" stop-color="#151d39"/></linearGradient><linearGradient id="mint" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00e0c2"/><stop offset="1" stop-color="#7c9cff"/></linearGradient><pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0V44" fill="none" stroke="#a6fff1" stroke-opacity=".08"/></pattern></defs>
+<rect width="1440" height="440" rx="28" fill="url(#bg)"/><rect width="1440" height="440" rx="28" fill="url(#grid)"/>
+<circle cx="1190" cy="215" r="210" fill="#00d5bd" opacity=".07"/><circle cx="1190" cy="215" r="146" fill="none" stroke="#00d5bd" stroke-opacity=".3" stroke-width="2"/><circle cx="1190" cy="215" r="94" fill="none" stroke="#819cff" stroke-opacity=".45" stroke-width="2" stroke-dasharray="7 9"/>
+<g transform="translate(1034 92)" stroke-linejoin="round">
+ <path d="M45 180 170 110l145 82-124 75z" fill="#1f3d43" stroke="#3b7777" stroke-width="3"/>
+ <path d="M170 110V55l145 81v56z" fill="#204d4b" stroke="#00d5bd" stroke-opacity=".75" stroke-width="3"/>
+ <path d="M45 180v-63l125-72v65z" fill="#143237" stroke="#7899ff" stroke-opacity=".7" stroke-width="3"/>
+ <path d="M104 164V96l72-42 73 42v68l-73 43z" fill="#0d2026" stroke="#00d5bd" stroke-width="4"/>
+ <circle cx="176" cy="130" r="46" fill="#193c43" stroke="url(#mint)" stroke-width="8"/><circle cx="176" cy="130" r="13" fill="#ffc56b"/>
+ <path d="M176 84v33m0 26v33m-46-46h33m26 0h33m-79-33 24 24m18 18 24 24m0-66-24 24m-18 18-24 24" stroke="#80fff0" stroke-width="7" stroke-linecap="round"/>
+ <path d="M176 130 260 84 302 108" fill="none" stroke="#ffc56b" stroke-width="9" stroke-linecap="round"/><circle cx="260" cy="84" r="11" fill="#ffc56b"/><circle cx="302" cy="108" r="9" fill="#ffc56b"/>
+ <path d="M92 205 92 248m160-42v45m-160-45 160 43" stroke="#7997ff" stroke-width="7" stroke-linecap="round"/>
+ <path d="M92 248h160" stroke="#7997ff" stroke-width="7" stroke-linecap="round"/>
+</g>
+<text x="86" y="172" fill="#00d5bd" font-family="monospace" font-size="19" letter-spacing="7">PORTABLE AI-AGENT SKILLS</text>
+<text x="80" y="260" fill="#f0fbf8" font-family="Arial,sans-serif" font-size="88" font-weight="800" letter-spacing="-4">KINETIQ</text>
+<text x="86" y="318" fill="#b4d0cc" font-family="Arial,sans-serif" font-size="26">Make machines explorable. Make every claim testable.</text>
+<text x="86" y="378" fill="#8faeaa" font-family="monospace" font-size="14" letter-spacing="3">17 SKILLS  /  MECHANICS  /  PHYSICS  /  3D  /  OFFLINE</text>
+</svg>

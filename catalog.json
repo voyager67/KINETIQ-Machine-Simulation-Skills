@@ -1,0 +1,121 @@
+[
+  {
+    "name": "assembly-coordinate-frames-and-joint-authoring",
+    "description": "Build a consistent machine assembly graph with named coordinate frames, joint definitions, degrees of freedom, and constraint checks. Use when imported parts must move together as a mechanism.",
+    "category": "Assemblies & constraints",
+    "path": "skills/assembly-coordinate-frames-and-joint-authoring/SKILL.md",
+    "words": 736
+  },
+  {
+    "name": "cad-mesh-import-and-geometry-preparation",
+    "description": "Prepare locally supplied CAD and mesh assets for reliable machine visualization by checking scale, units, transforms, topology, normals, and simplification. Use when importing complex geometry into a simulator.",
+    "category": "CAD & geometry",
+    "path": "skills/cad-mesh-import-and-geometry-preparation/SKILL.md",
+    "words": 808
+  },
+  {
+    "name": "drivetrain-power-transmission-analysis",
+    "description": "Analyze educational drivetrain models by tracing speed, torque, direction, power, and idealized losses through gears, belts, chains, and shafts. Use when a machine explainer needs consistent power-flow readouts.",
+    "category": "Power transmission",
+    "path": "skills/drivetrain-power-transmission-analysis/SKILL.md",
+    "words": 772
+  },
+  {
+    "name": "engineering-reference-reconstruction",
+    "description": "Reconstruct a machine or mechanism from manuals, photographs, dimensioned drawings, and other references while tracking provenance, units, missing measurements, and confidence. Use when modeling must start from incomplete or conflicting references.",
+    "category": "Research & reconstruction",
+    "path": "skills/engineering-reference-reconstruction/SKILL.md",
+    "words": 719
+  },
+  {
+    "name": "fluid-power-system-visualization",
+    "description": "Create clearly bounded educational models of hydraulic and pneumatic circuits, showing flow paths, pressure states, valves, actuators, and simplified continuity relationships. Use when fluid power is part of a machine explainer.",
+    "category": "Fluid systems",
+    "path": "skills/fluid-power-system-visualization/SKILL.md",
+    "words": 749
+  },
+  {
+    "name": "interactive-3d-explainer-design",
+    "description": "Design accessible 3D explainers with meaningful camera views, part selection, cutaways, exploded views, guided tours, and controls tied to a learning objective. Use when spatial relationships matter.",
+    "category": "3D interaction",
+    "path": "skills/interactive-3d-explainer-design/SKILL.md",
+    "words": 580
+  },
+  {
+    "name": "low-end-3d-performance-tuning",
+    "description": "Optimize interactive 3D simulations for integrated GPUs, laptops, and mobile devices using measured profiling, quality tiers, bounded scene complexity, and graceful fallbacks. Use when a simulator is slow or must run on modest hardware.",
+    "category": "Delivery & performance",
+    "path": "skills/low-end-3d-performance-tuning/SKILL.md",
+    "words": 598
+  },
+  {
+    "name": "machine-teardown-simulator",
+    "description": "Build an interactive 3D simulator that explains a real machine or mechanism through model-driven motion, live readouts, subsystem isolation, cutaways, exploded views, camera presets, and a guided tour. Use when a user asks how a machine works, requests a mechanical visual explainer, or wants an offline simulator.",
+    "category": "Core workflow",
+    "path": "skills/machine-teardown-simulator/SKILL.md",
+    "words": 988
+  },
+  {
+    "name": "mechanism-kinematics-and-linkage-solving",
+    "description": "Derive and verify motion for linkages, gears, cams, sliders, joints, and constrained assemblies before animating them. Use when a simulator needs physically consistent part positions or motion ratios.",
+    "category": "Physics & mechanics",
+    "path": "skills/mechanism-kinematics-and-linkage-solving/SKILL.md",
+    "words": 660
+  },
+  {
+    "name": "offline-simulator-packaging",
+    "description": "Package a simulator as a dependable local/offline deliverable with bundled dependencies, documented runtime needs, reproducible builds, and no hidden network services. Use when preparing an interactive simulator for handoff or publication.",
+    "category": "Delivery & performance",
+    "path": "skills/offline-simulator-packaging/SKILL.md",
+    "words": 642
+  },
+  {
+    "name": "parameter-uncertainty-and-sensitivity-analysis",
+    "description": "Quantify how uncertain model inputs affect simulation outputs using documented ranges, sensitivity measures, and reproducible sampling. Use when estimates or incomplete measurements could change the conclusion.",
+    "category": "Uncertainty & sensitivity",
+    "path": "skills/parameter-uncertainty-and-sensitivity-analysis/SKILL.md",
+    "words": 727
+  },
+  {
+    "name": "physics-model-validation",
+    "description": "Build and check simplified physical models with dimensional consistency, explicit assumptions, reference cases, numerical tests, uncertainty, and honest limits. Use when a visualization displays calculated engineering or scientific quantities.",
+    "category": "Physics & mechanics",
+    "path": "skills/physics-model-validation/SKILL.md",
+    "words": 618
+  },
+  {
+    "name": "scientific-visualization-storytelling",
+    "description": "Present simulation and experimental data with correct units, honest scales, clear uncertainty, traceable provenance, and an explanatory narrative. Use when charts or scientific overlays support a simulator.",
+    "category": "Science & data",
+    "path": "skills/scientific-visualization-storytelling/SKILL.md",
+    "words": 552
+  },
+  {
+    "name": "simulation-controls-and-subsystem-inspection",
+    "description": "Design reliable controls for simulation inputs, operating modes, part isolation, exploded views, cutaways, camera presets, and guided inspection. Use when viewers need to explore a complex machine without losing context.",
+    "category": "3D interaction",
+    "path": "skills/simulation-controls-and-subsystem-inspection/SKILL.md",
+    "words": 621
+  },
+  {
+    "name": "simulation-visual-regression",
+    "description": "Verify interactive simulations across model states, input modes, devices, and rendering tiers using numerical assertions, deterministic captures, and visual review. Use when checking a simulator before calling it complete.",
+    "category": "Capture & verification",
+    "path": "skills/simulation-visual-regression/SKILL.md",
+    "words": 563
+  },
+  {
+    "name": "thermal-system-modelling-and-heat-transfer-visualization",
+    "description": "Build transparent educational thermal models using heat capacity, thermal resistance, conduction, convection, radiation, and energy balances. Use when machine explainers need temperature or heat-flow behaviour.",
+    "category": "Thermal systems",
+    "path": "skills/thermal-system-modelling-and-heat-transfer-visualization/SKILL.md",
+    "words": 733
+  },
+  {
+    "name": "timeline-driven-animation-capture",
+    "description": "Create deterministic animation timelines and repeatable still/video capture so a simulator motion, camera, labels, and optional audio remain synchronized. Use when building a guided tour, repeatable capture, or exportable demo.",
+    "category": "Capture & verification",
+    "path": "skills/timeline-driven-animation-capture/SKILL.md",
+    "words": 647
+  }
+]
