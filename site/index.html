@@ -100,19 +100,61 @@
   }
   function renderFilters() {
     const categories = [...new Set(skills.map(skill => skill.category))].sort();
-    $('#filters').innerHTML = [['all','All skills'], ...categories.map(item => [item,item])]
-      .map(([key,label]) => `<button class="chip ${activeCategory===key?'active':''}" data-category="${key}">${key==='all'?label:label}</button>`).join('');
+    const entries = [['all', 'All skills'], ...categories.map(item => [item, item])];
+    const buttons = entries.map(([key, label]) => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = `chip${activeCategory === key ? ' active' : ''}`;
+      button.dataset.category = key;
+      button.textContent = label;
+      return button;
+    });
+    $('#filters').replaceChildren(...buttons);
   }
   function render() {
     const filtered = skills.filter(skill => (activeCategory === 'all' || skill.category === activeCategory) &&
       `${skill.name} ${skill.description} ${skill.category}`.toLowerCase().includes(query));
     $('#resultCount').textContent = `Showing ${filtered.length} of ${skills.length} skills`;
-    $('#catalog').innerHTML = filtered.length ? filtered.map(skill => `
-      <button class="skill" type="button" data-skill="${skill.name}">
-        <span class="skill-top"><span class="slug">${skill.name}</span><span class="tag">${skill.category}</span></span>
-        <p>${skill.description}</p>
-        <span class="skill-bottom"><span>${skill.words} words</span><span>Preview skill ↗</span></span>
-      </button>`).join('') : '<div class="empty">No skills match. Try another term or category.</div>';
+
+    const cards = filtered.map(skill => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'skill';
+      button.dataset.skill = skill.name;
+
+      const top = document.createElement('span');
+      top.className = 'skill-top';
+      const slug = document.createElement('span');
+      slug.className = 'slug';
+      slug.textContent = skill.name;
+      const tag = document.createElement('span');
+      tag.className = 'tag';
+      tag.textContent = skill.category;
+      top.append(slug, tag);
+
+      const description = document.createElement('p');
+      description.textContent = skill.description;
+
+      const bottom = document.createElement('span');
+      bottom.className = 'skill-bottom';
+      const words = document.createElement('span');
+      words.textContent = `${skill.words} words`;
+      const preview = document.createElement('span');
+      preview.textContent = 'Preview skill ↗';
+      bottom.append(words, preview);
+
+      button.append(top, description, bottom);
+      return button;
+    });
+
+    if (cards.length) {
+      $('#catalog').replaceChildren(...cards);
+    } else {
+      const empty = document.createElement('div');
+      empty.className = 'empty';
+      empty.textContent = 'No skills match. Try another term or category.';
+      $('#catalog').replaceChildren(empty);
+    }
   }
   function closeModal() {
     $('#modal').classList.remove('open');
@@ -127,11 +169,15 @@
     $('#skillTitle').textContent = skill.name;
     $('#skillDescription').textContent = skill.description;
     $('#skillBody').textContent = 'Loading full skill…';
-    $('#openFile').href = skill.path;
+    const skillPath = `skills/${encodeURIComponent(skill.name)}/SKILL.md`;
+    $('#openFile').href = skillPath;
     $('#modal').classList.add('open');
     $('#close').focus();
     try {
-      const response = await fetch(skill.path);
+      if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(skill.name)) {
+        throw new Error('Invalid skill name');
+      }
+      const response = await fetch(skillPath);
       if (!response.ok) throw new Error('Could not load skill file');
       currentText = await response.text();
       $('#skillBody').textContent = currentText;
@@ -166,7 +212,13 @@
   });
   fetch('./catalog.json').then(response => { if (!response.ok) throw new Error('catalog unavailable'); return response.json(); })
     .then(data => { skills = data; $('#totalSkills').textContent = skills.length; $('#totalDomains').textContent = new Set(skills.map(item => item.category)).size; renderFilters(); render(); })
-    .catch(() => { $('#catalog').innerHTML = '<div class="empty">Could not load catalog.json. Serve the site folder with python -m http.server --directory site.</div>'; $('#resultCount').textContent = 'Catalogue unavailable'; });
+    .catch(() => {
+      const empty = document.createElement('div');
+      empty.className = 'empty';
+      empty.textContent = 'Could not load catalog.json. Serve the site folder with python -m http.server --directory site.';
+      $('#catalog').replaceChildren(empty);
+      $('#resultCount').textContent = 'Catalogue unavailable';
+    });
 })();
 </script>
 </body>
